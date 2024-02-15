@@ -36,7 +36,7 @@ const Signin = () => {
 
       setLoading(false);
       setError(null)
-      navigate('/sign-up')
+      navigate('/')
       
     } catch (error) {
       setLoading(false);
@@ -73,7 +73,7 @@ const Signin = () => {
         </button>
       </form>
       <div className="flex gap-2 mt-5">
-        <p className="">Don't have an account?</p>
+        <p className="">Dont have an account?</p>
         <Link to={"/sign-in"}>
           <span className="text-blue-700">sign up</span>
         </Link>
