@@ -1,9 +1,12 @@
 
-//CUSTOM ERROR HANDLER:
+
+//using the middleware in 
+
+//CUSTOM ERROR HANDLER: to throw error if password is incorrect or if user iput a wrong details
 const errorHandler = (statusCode, message) => {
   const error = new Error();
-  error.statusCode = statusCode;
-  error.message = message;
+  error.statusCode = statusCode; // equal to statusCode param
+  error.message = message; // equal to message param
   return error;
 };
 
