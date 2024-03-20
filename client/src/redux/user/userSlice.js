@@ -1,7 +1,7 @@
 
 import { createSlice } from '@reduxjs/toolkit';
 
-// used to manage state globally
+// used to manage initial state globally
 const initialState = {
   currentUser: null,
   error: null,

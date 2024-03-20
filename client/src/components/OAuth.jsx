@@ -20,7 +20,7 @@ const OAuth = () => {
       const result = await signInWithPopup(auth, provider) //get the informations from google firebase
       //console.log(result);
 
-      const fetchResult = await fetch('/api/auth/google', {
+      const fetchResult = await fetch('/api/auth/google', {     //fetch the google route from backend
 
         method: 'POST',
         headers: {
