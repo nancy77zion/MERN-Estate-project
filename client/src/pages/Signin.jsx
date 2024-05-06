@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux" //dispatch hooks for redux
-import { signInStart, signInFailure, signInSuccess } from "../redux/user/userSlice";
+import { signInStart, signInFailure, signInSuccess } from "../redux/user/userSlice"; //import the userSlice
 import OAuth from "../components/OAuth";
 
 const Signin = () => {
   const [formData, setFormData] = useState({});
   const {loading, error} = useSelector((state) => state.user) //destructure the state from  /user/userSlice
+
+  /*states now handled by redux above */
   // const [error, setError] = useState(null);
   // const [loading, setLoading] = useState(false);
   const navigate = useNavigate()

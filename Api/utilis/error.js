@@ -1,6 +1,6 @@
 
 
-//using the middleware in 
+//using the middleware for controllers
 
 //CUSTOM ERROR HANDLER: to throw error if password is incorrect or if user iput a wrong details
 const errorHandler = (statusCode, message) => {
