@@ -6,6 +6,7 @@ import storage from 'redux-persist/lib/storage'
 
 const rootReducer = combineReducers({ user: userReducer });
 
+//Redux Persist helps your app remember things even after it's closed or refreshed.Redux Persist is particularly useful for storing Redux state in local storage, allowing you to save data on the user's device.
 const persistConfig = {
   key: 'root',
   storage,
